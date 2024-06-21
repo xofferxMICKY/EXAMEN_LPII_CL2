@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+    <persistence-unit name="LPII_CL2_OFFER_RUIZ_ESTEBAN_CHECYA">
+
+        <!-- se vinculan las entidades que tenemos en el paquete model... -->
+        <class>modelo.Modelo_producto</class>
+        <class>modelo.Modelo_usuario</class>
+
+        <!-- mysql -->
+        <properties>
+            <!--  MySQL  -->
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+            <!--  Configuración de la URL con codificación de caracteres  -->
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/bdofferestebancl2?characterEncoding=UTF-8"/>
+            <property name="javax.persistence.jdbc.user" value="root"/>
+            <!-- <property name="javax.persistence.jdbc.password" value="mysql"/> -->
+            <!--  Manejador Hibernate ORM  -->
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
+            <property name="hibernate.show_sql" value="true"/>
+        </properties>
+
+    </persistence-unit>
+</persistence>

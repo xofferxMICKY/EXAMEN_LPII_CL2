@@ -4,4 +4,24 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>Controlador_usuario</servlet-name>
+  	<display-name>Controlador_usuario</display-name>
+  	<description></description>
+  	<servlet-class>controlador.Controlador_usuario</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Controlador_producto</servlet-name>
+  	<display-name>Controlador_producto</display-name>
+  	<description></description>
+  	<servlet-class>controlador.Controlador_producto</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Controlador_usuario</servlet-name>
+  	<url-pattern>/Controlador_usuario</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Controlador_producto</servlet-name>
+  	<url-pattern>/Controlador_producto</url-pattern>
+  </servlet-mapping>
 </web-app>
