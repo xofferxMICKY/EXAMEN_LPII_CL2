@@ -42,12 +42,12 @@
 <body>
     <div class="login-container">
         <h1>Ingresar al Sistema</h1>
-        <form action="tu_ruta_de_autenticacion" method="post">
+        <form action="Controlador_usuario" method="post">
             <label for="usuario">usuario</label><br>
             <input type="text" id="usuario" name="usuario"><br>
             <label for="password">password</label><br>
             <input type="password" id="password" name="password"><br>
-            <input type="submit" value="Registrar">
+            <input type="submit" value="Ingresar">
         </form>
     </div>
 </body>
